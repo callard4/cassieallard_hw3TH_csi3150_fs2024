@@ -1,0 +1,414 @@
+/*general styling*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1;
+  background-color: #fffefe;
+  color: #000000;
+}
+
+/*styling the header, background image, centering text and adding space between*/
+
+header {
+  background: url("../assets/michbackground.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rbg(255, 255, 255);
+  text-align: center;
+  position: relative;
+  
+}
+
+.hero h1 {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+/*styling scroll down arrow, centering*/
+
+.scroll {
+  margin-top: 20px;
+  height: auto;
+  color: #000000;
+}
+
+.scroll i {
+  font-size: 5rem;
+  margin-top: 20px;
+}
+
+/*styling second page, background image, row direction, centering text*/
+.introLeft {
+  background: url(../assets/michbackground2.jpg) no-repeat center/cover;
+  padding: 100px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+}
+
+.introLeft h2 {
+  font-size: 4rem;
+  margin-left: 40px;
+  margin-right: 50px;
+  flex: 1;
+  color: rgb(37, 33, 33);
+}
+
+.introright {
+  font-size: 14px;
+  flex: 1;
+}
+
+.introright p {
+  margin: 50px 0;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+/*styling read more button*/
+.ctaBtn {
+  background-color: rgb(37, 33, 33);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ctaBtn:hover {
+  background-color: #000000;
+}
+
+/*styling third page, adding background and centering text*/
+.best_destinations {
+  padding: 35px;
+  text-align: center;
+  background: url("../assets/michbackground3.jpg");
+}
+
+.places {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.destination {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  margin-bottom: 20px;
+}
+/*styling images to have space between and not cover whole page, making it so text is in picture*/
+.destination img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.best_destinations h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.destination h3 {
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  color: white;
+  font-size: 1rem;
+}
+
+
+.captionarrow {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    color: white;
+   
+}
+
+.captionarrow p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.downarrow i {
+    font-size: 5rem;
+   
+}
+
+.readmore1 {
+  bottom: 100px;
+  left: 10px;
+  background-color: rgb(126, 125, 125);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.readmore1:hover {
+    background-color: #000000;
+}
+
+/*styling fifth page, background image*/
+.recommendations {
+    background-image: url("../assets/michbackground4.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+/*centering text, adding box around text so you can see the text better*/
+.recommendations h2{
+    font-size: 4rem;
+    margin-left: 5px;
+    margin-right: 70px;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.content {
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #5c7e7f;
+}
+/*styling stats page, using circle images to put text in, centering text and circles*/
+.stats {
+    background-image: url("../assets/michbackground5.jpg");
+    background-position: center;
+    background-size: cover;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 100px;
+    height: 100vh;
+}
+
+.stats img {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.statWrapper h3{
+    font: 400;
+    position: relative;
+    font-size: 2rem;
+    z-index: 2;
+    color: rgb(19, 108, 197);
+    text-align: center;
+    margin: 0;
+    top: 80px;
+}
+
+.statWrapper p{
+    position: relative;
+    font-size: 20px;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    margin: 0;
+    top: 100px;
+}
+/*styling author page, making picture a circle, centering text below*/
+.authorInfo {
+    background-image: url("../assets/michbackground6.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.authorImg{
+
+    height: 200px;
+    width: 200px;
+    margin-bottom: 100px;
+    border-radius: 50%;
+}
+
+.review {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    
+}
+
+.review i{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+
+}
+/*styling gallery page, adding arrows to the left and right*/
+.picgallery {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    height: 400px;
+    background-color: #000000;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: white;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: white;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+/*styling contact page, keeping info to the left and form box to the right */
+.contactus {
+    background-image: url(../assets/michbackground7.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 60vh;
+    padding: 100px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.contactinfo {
+    width: 45%;
+    color: white;
+    flex: 1;
+}
+
+.contactinfo h2{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.contactinfo p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.form{
+    width: 45%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: white;
+}
+
+.form label {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.form input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #b3b2b2;
+    border-radius: 5px;
+}
+
+.form textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #b3b2b2;
+    border-radius: 5px;
+}
+
+.form button[type="submit"] {
+    width: auto;
+    color: white;
+    background-color: #ceb547;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #000000;
+}
+
+.socials img {
+    width: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.socials {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+}
